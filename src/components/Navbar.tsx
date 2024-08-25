@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, useLocation} from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   const location = useLocation();
@@ -26,46 +26,46 @@ const NavBar: React.FC = () => {
           />
         </svg>
         
-      <nav>
-      <div className="flex flex-wrap justify-center gap-4 py-3 pr-4">
-      <NavLink 
-        to="/All"
-        className={isAllActive ? "font-bold underline cursor-pointer text-blue-800 dark:text-blue-700" : "text-gray-500 dark:text-gray-400"}
-      >
-        <span className="ml-2 font-medium text-sm">ALL</span>
-        </NavLink>
-      <div className="flex items-center">
-       <NavLink 
-        to="/Images" 
-        className={({ isActive }) => 
-          isActive ? "font-bold underline cursor-pointer text-blue-800 dark:text-blue-700" : "text-gray-500 dark:text-gray-400"
-        }
-      >
-        <span className="font-medium text-sm">IMAGES</span>
-        </NavLink>
-        </div>
-      </div>
-      </nav>
+        <nav>
+          <div className="flex flex-wrap justify-center gap-4 py-3 pr-4">
+            <NavLink 
+              to="/All"
+              className={isAllActive ? 'font-bold underline cursor-pointer text-blue-800 dark:text-blue-700' : 'text-gray-500 dark:text-gray-400'}
+            >
+              <span className="ml-2 font-medium text-sm">ALL</span>
+            </NavLink>
+            <div className="flex items-center">
+              <NavLink 
+                to="/Images" 
+                className={({ isActive }) => 
+                  isActive ? 'font-bold underline cursor-pointer text-blue-800 dark:text-blue-700' : 'text-gray-500 dark:text-gray-400'
+                }
+              >
+                <span className="font-medium text-sm">IMAGES</span>
+              </NavLink>
+            </div>
+          </div>
+        </nav>
       
       </div>
       <div className="flex items-center">
-      <div className="ml-auto relative flex flex-col items-center mb-10">
-        <div className="flex space-x-0 -mb-1">
-        <span className="text-sm">•</span>
-        <span className="text-sm">•</span>
-        <span className="text-sm">•</span>
-     </div>
-  <div className="flex space-x-0 -mb-7">
-    <span className="text-sm">•</span>
-    <span className="text-sm">•</span>
-    <span className="text-sm">•</span>
-  </div>
-  <div className="flex space-x-0 -mb-5">
-    <span className="text-sm">•</span>
-    <span className="text-sm">•</span>
-    <span className="text-sm">•</span>
-  </div>
-</div>
+        <div className="ml-auto relative flex flex-col items-center mb-10">
+          <div className="flex space-x-0 -mb-1">
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+          </div>
+          <div className="flex space-x-0 -mb-7">
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+          </div>
+          <div className="flex space-x-0 -mb-5">
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+            <span className="text-sm">•</span>
+          </div>
+        </div>
         <button className="ml-2 rounded-full bg-orange-500 text-white font-medium text-xl px-2 py-0 mr-3 opacity-90">
           R
         </button>
