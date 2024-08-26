@@ -31,6 +31,7 @@ export default [
       //'@typescript-eslint/explicit-function-return-type': ['warn', { 'allowExpressions': true }],
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/no-non-null-assertion': 'error',
     },
   }
 ];
